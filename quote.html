@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #out{
+        border: 1px solid black;
+        height: 100px;
+        width: 400px;
+        border-style: none;
+
+    }
+    button{
+    height: 50px;
+    width: 200px;
+
+    }
+        </style>
+</head>
+<body>
+    <div id="out">
+        
+    </div>
+    <button onclick="txt()">button</button>
+    <script>
+        function txt(){
+            let rand= Math.floor(Math.random()*5+1)
+            if(rand===1){
+       document.getElementById("out").innerHTML= "Honesty is the Best policy"
+
+    }
+   else  if(rand===2){
+    document.getElementById("out").innerHTML= "A friend in Need is Friend ineed!"
+    }
+    else  if(rand===3){
+        document.getElementById("out").innerHTML= "HEllo World"
+    }
+    else  if(rand===4){
+        document.getElementById("out").innerHTML= "Have A Nice Day "
+    }
+  else{
+    document.getElementById("out").innerHTML= "Once in a blue Moon !"
+    
+    }}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
